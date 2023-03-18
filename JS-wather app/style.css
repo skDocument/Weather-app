@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #457b9d;
+}
+
+#form{
+    margin : 5% auto;
+    /* border: 1px solid orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form input {
+    width: 350px;
+    height: 50px;
+    padding: 4px;
+    border: 1px solid transparent;
+    border-bottom: 3px solid #a8dadc;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    color: #f1faee;
+    transition: border .9s ;
+}
+
+#form input::placeholder{
+    color: #a8dadc;
+    font-size: 19px;
+
+}
+
+
+#form input:focus{
+    outline: none;
+    border-bottom: 3px solid #f1faee;
+}
+
+#form input:focus::placeholder{
+    color: #f1faee ;
+}
+.weather{
+    width: 400px;
+    height: 170px;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather div span{
+    font-size: large;
+    font-family: monospace;
+    color: #f1faee ;
+    margin-top: 5px;
+}
+
+.weather div img{
+    width: 80px;
+    height: 80px;
+}
